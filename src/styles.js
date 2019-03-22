@@ -1,4 +1,4 @@
-import { styled, keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const MyApp = styled.div`
   text-align: center;
