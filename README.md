@@ -6,9 +6,38 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Förberedelser / För att komma igång
 Kolla in förberedelsesidan: [Hem](https://github.com/cygni/cygni-datatjej-react/wiki/Hem)
 
-## Available Scripts
+## Del 1 - React basics, komponenter, props och state
 
-I projektmappen så kan du köra:
+### Nybörjare
+1. Skapa en räknare som kan räkna upp med knapptryck
+2. Lägg till en till knapp som låter användaren räkna ned
+3. Lägg till en tredje knapp som låter användaren nollställa räknaren
+
+Exempel på resultat:
+
+<bild>
+
+### Mellan-nivå
+1. Skapa ett fält som visar hur lång tid det är kvar till ett visst tillfälle t.ex. nedräkning till julafton
+2. Låt användaren ange datum som det räknas ned till
+3. Bryt ut fälten + input från steg 1 och 2 ovan till en egen komponent så flera nedräknare kan visas samtidigt
+
+Exempel på resultat:
+<bild>
+
+### Advancerad nivå
+* Skapa en räknare likt 1 på Mellan-nivå men formatera tiden till ett human-friendly format med exempelvis `moment`
+* Skapa en räknare som räknar up/ned till Nybbörjare men använd `useReducer` från React för state-uppdatering 
+
+Exempel på resultat:
+<bild>
+
+## Del 2 - Styled components
+
+
+## Tillgängliga skripts
+
+I projektmappen så kan du i en terminal köra köra:
 
 ### `yarn start` eller `npm start` 
 
