@@ -1,5 +1,5 @@
 import React from 'react';
-import { MyApp, AppLogo, AppHeader, AppLink } from './styles';
+import { MyApp, AppLogo, AppHeader, AppLink, Code } from './styles';
 import logo from './logo.svg';
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
       <AppHeader className="App-header">
         <AppLogo src={logo} alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <Code>src/App.js</Code> and save to reload.
           </p>
         <AppLink
           className="App-link"
