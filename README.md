@@ -10,7 +10,7 @@ I projektmappen så kan du köra:
 ### `npm start` eller `yarn start`
 
 Kör appen i development mode.<br>
-Öppna [http://localhost:3000](http://localhost:3000) för att se den i webbläsaren.
+Öppna [http://localhost:1337](http://localhost:1337) för att se den i webbläsaren.
 
 Sidan laddar om ifall du gör ändringar i koden.<br>
 Ev lintfel kommer presenteras i konsollen (console)
