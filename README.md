@@ -3,11 +3,14 @@ React introduktionsworkshop meed hooks and styled-components - https://datatjej.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Förberedelser / För att komma igång
+Kolla in förberedelsesidan: [Hem](https://github.com/cygni/cygni-datatjej-react/wiki/Hem)
+
 ## Available Scripts
 
 I projektmappen så kan du köra:
 
-### `npm start` eller `yarn start`
+### `yarn start` eller `npm start` 
 
 Kör appen i development mode.<br>
 Öppna [http://localhost:1337](http://localhost:1337) för att se den i webbläsaren.
@@ -15,12 +18,12 @@ Kör appen i development mode.<br>
 Sidan laddar om ifall du gör ändringar i koden.<br>
 Ev lintfel kommer presenteras i konsollen (console)
 
-### `npm test` eller `yarn test`
+### `yarn test` eller `npm test` 
 
 Startar testköraren i interkativt läge (interactive watch mode)<br>
 För mer information om att köra tester på engelska: [running tests](https://facebook.github.io/create-react-app/docs/running-tests)
 
-### `npm run build` eller `yarn build`
+###  `yarn build` eller `npm run build` 
 
 Bygger appen för produktion till `build`-mappen.<br>
 Bundlar med React i produktionsläge och optimerar bygget för bästa prestanda.
