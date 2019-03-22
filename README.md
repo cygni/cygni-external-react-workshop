@@ -28,8 +28,9 @@ Exempel på resultat:
 * Skapa en räknare likt 1 på Mellan-nivå men formatera tiden till ett human-friendly format med exempelvis `moment`
 * Skapa en räknare som räknar up/ned till Nybbörjare men använd `useReducer` från React för state-uppdatering 
 
+
 Exempel på resultat:
-<bild>
+<img src='countdown-adv.png'>
 
 ## Del 2 - Styled components
 
