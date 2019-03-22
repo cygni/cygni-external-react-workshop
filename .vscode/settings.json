@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "eslint.enable": true,
+  "editor.rulers": [120]
+}
+
