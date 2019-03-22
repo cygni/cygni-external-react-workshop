@@ -1,31 +1,35 @@
+# cygni-datatjej-react
+React introduktionsworkshop meed hooks and styled-components - https://datatjej.se/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+I projektmappen så kan du köra:
 
-### `npm start`
+### `npm start` eller `yarn start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Kör appen i development mode.<br>
+Öppna [http://localhost:3000](http://localhost:3000) för att se den i webbläsaren.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Sidan laddar om ifall du gör ändringar i koden.<br>
+Ev lintfel kommer presenteras i konsollen (console)
 
-### `npm test`
+### `npm test` eller `yarn test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Startar testköraren i interkativt läge (interactive watch mode)<br>
+För mer information om att köra tester på engelska: [running tests](https://facebook.github.io/create-react-app/docs/running-tests)
 
-### `npm run build`
+### `npm run build` eller `yarn build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bygger appen för produktion till `build`-mappen.<br>
+Bundlar med React i produktionsläge och optimerar bygget för bästa prestanda.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Bygget blir miniferat och filnamnen inkluderar hashar (används för cache-invalidation mm)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+För mer information om deployment på engelska: [deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+## Nedan är Create-React-app info på Engelska om mer advancerade bitar, kan ignoreras nu
 
 ### `npm run eject`
 
