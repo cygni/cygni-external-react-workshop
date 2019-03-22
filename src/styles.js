@@ -19,13 +19,14 @@ export const Code = styled.code`
 
 export const AppHeader = styled.header`
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 2em;
 `;
 
 export const AppLink = styled.a`
@@ -43,7 +44,7 @@ export const rotate360 = keyframes`
 
 export const AppLogo = styled.img`
   animation: ${rotate360} infinite 20s linear;
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 `;
 

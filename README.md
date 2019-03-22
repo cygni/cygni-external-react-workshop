@@ -13,9 +13,8 @@ Kolla in förberedelsesidan: [Hem](https://github.com/cygni/cygni-datatjej-react
 2. Lägg till en till knapp som låter användaren räkna ned
 3. Lägg till en tredje knapp som låter användaren nollställa räknaren
 
-Exempel på resultat:
-
-<bild>
+Exempel på resultat:<br>
+<img src='counter.png'>
 
 ### Mellan-nivå
 1. Skapa ett fält som visar hur lång tid det är kvar till ett visst tillfälle t.ex. nedräkning till julafton
@@ -23,7 +22,7 @@ Exempel på resultat:
 3. Bryt ut fälten + input från steg 1 och 2 ovan till en egen komponent så flera nedräknare kan visas samtidigt
 
 Exempel på resultat:
-<bild>
+<img src='countdown.png'>
 
 ### Advancerad nivå
 * Skapa en räknare likt 1 på Mellan-nivå men formatera tiden till ett human-friendly format med exempelvis `moment`
