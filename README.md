@@ -1,4 +1,4 @@
-# cygni-datatjej-react
+# React-workshop för DataTjej med Cygni
 React introduktionsworkshop meed hooks and styled-components - https://datatjej.se/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -17,7 +17,7 @@ Exempel på resultat:<br>
 <img src='counter.png'>
 
 ### Mellan-nivå
-1. Skapa ett fält som visar hur lång tid det är kvar till ett visst tillfälle t.ex. nedräkning till julafton
+1. Skapa ett fält som visar hur lång tid det är kvar till en viss (förbestämd) tidpunkt t.ex. nedräkning till julafton
 2. Låt användaren ange datum som det räknas ned till
 3. Bryt ut fälten + input från steg 1 och 2 ovan till en egen komponent så flera nedräknare kan visas samtidigt
 
@@ -25,8 +25,8 @@ Exempel på resultat:
 <img src='countdown.png'>
 
 ### Advancerad nivå
-* Skapa en räknare likt 1 på Mellan-nivå men formatera tiden till ett human-friendly format med exempelvis `moment`
-* Skapa en räknare som räknar up/ned till Nybbörjare men använd `useReducer` från React för state-uppdatering 
+* Skapa en räknare likt 1 på Mellan-nivå men formatera tiden till ett human-friendly format med exempelvis biblioteket `moment`
+* Skapa en räknare som räknar up/ned likt 1-3 på Nybörjar-nivå men använd `useReducer` från React för state-uppdatering 
 
 
 Exempel på resultat:
