@@ -41,9 +41,55 @@ export const rotate360 = keyframes`
   }
   `;
 
+export const rotateNegative360 = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+  `;
+
+export const rotateNegative360OffsetHalf = keyframes`
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+  `;
+
+
+
 export const AppLogo = styled.img`
   animation: ${rotate360} infinite 20s linear;
-  height: 40vmin;
+  height: 10em;
   pointer-events: none;
+`;
+
+
+export const Orbit = styled.div`
+  position: relative;
+`
+
+export const Heart = styled.img`
+  position: absolute;
+  margin-left: -10em;
+  margin-top: -7em;
+  height: 4em;
+  pointer-events: none;
+  transform-origin: 10em center;
+  animation: ${rotateNegative360} 3s linear infinite;
+`;
+
+
+export const Cygni = styled.img`
+  position: absolute;
+  margin-left: -10em;
+  margin-top: -7em;
+  height: 4em;
+  pointer-events: none;
+  transform-origin: 10em center;
+  animation: ${rotateNegative360OffsetHalf} 3s linear infinite;
 `;
 
