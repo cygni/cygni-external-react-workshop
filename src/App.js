@@ -1,5 +1,15 @@
 import React, { useState, useEffect, useReducer } from "react";
-import { MyApp, AppLogo, AppHeader, AppLink, Code } from "./styles";
+import {
+  AppLogo,
+  AppHeader,
+  AppLink,
+  Button,
+  Code,
+  Container,
+  Count,
+  MyApp,
+  ResetButton
+} from "./styles";
 import moment from "moment";
 import "./App.css";
 import logo from "./logo.svg";
@@ -8,27 +18,18 @@ const Counter = props => {
   const [count, setCounter] = useState(props.initialCount || 0);
 
   return (
-    <div className="container">
-      <span className="counter">{count}</span>
-      <button
-        className="button increase-button"
-        onClick={() => setCounter(count + 1)}
-      >
+    <Container>
+      <Count color="#09cdda">{count}</Count>
+      <Button color={"#0f93bb"} onClick={() => setCounter(count + 1)}>
         +
-      </button>
-      <button
-        className="button decrease-button"
-        onClick={() => setCounter(count - 1)}
-      >
+      </Button>
+      <Button color={"#ce93db"} onClick={() => setCounter(count - 1)}>
         -
-      </button>
-      <button
-        className="button reset-button"
-        onClick={() => setCounter(props.initialCount || 0)}
-      >
+      </Button>
+      <ResetButton onClick={() => setCounter(props.initialCount || 0)}>
         Reset
-      </button>
-    </div>
+      </ResetButton>
+    </Container>
   );
 };
 
@@ -101,27 +102,18 @@ function reducer(state, action) {
 const CounterWithReducer = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <div className="container">
-      <span className="counter">{state.count}</span>
-      <button
-        className="button increase-button"
-        onClick={() => dispatch({ type: "increment" })}
-      >
+    <Container>
+      <Count color="#09cdda">{state.count}</Count>
+      <Button color={"#0f93bb"} onClick={() => dispatch({ type: "increment" })}>
         +
-      </button>
-      <button
-        className="button decrease-button"
-        onClick={() => dispatch({ type: "decrement" })}
-      >
+      </Button>
+      <Button color={"#ce93db"} onClick={() => dispatch({ type: "decrement" })}>
         -
-      </button>
-      <button
-        className="button reset-button"
-        onClick={() => dispatch({ type: "reset" })}
-      >
+      </Button>
+      <ResetButton onClick={() => dispatch({ type: "reset" })}>
         Reset
-      </button>
-    </div>
+      </ResetButton>
+    </Container>
   );
 };
 
@@ -142,9 +134,10 @@ export default function App() {
         </AppLink>
       </AppHeader>
 
-      {/*<Counter />*/}
-      {/*<CountdownHumanFriendlyCounter />*/}
-      <CounterWithReducer />
+      {<Counter />}
+      {<CounterWithReducer />}
+      {<CountdownCounter />}
+      {<CountdownHumanFriendlyCounter />}
     </MyApp>
   );
 }

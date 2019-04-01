@@ -1,3 +1,4 @@
+import React from "react";
 import styled, { keyframes } from "styled-components";
 
 export const MyApp = styled.div`
@@ -53,3 +54,34 @@ export const Container = styled.div`
   justify-content: center;
   flex-wrap: wrap;
 `;
+
+export const Count = styled.span`
+  color: ${props => props.color};
+  font-size: 8em;
+  flex-grow: 1;
+  flex: 100%;
+`;
+
+export const Button = styled.button`
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid ${props => props.color || "#a9a9a9"};
+  color: ${props => props.color || "#a9a9a9"};
+  margin: 1em;
+  padding: 0.25em 1em;
+  min-width: 25px;
+  max-width: 50px;
+  flex: auto;
+`;
+
+export const ResetButton = styled(Button)`
+  flex: 100%;
+  max-width: 150px;
+`;
+
+export const ButtonWithIcon = ({ icon, children }) => (
+  <Button>
+    <span>{icon}</span>
+    {children}
+  </Button>
+);

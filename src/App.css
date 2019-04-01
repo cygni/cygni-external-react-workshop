@@ -13,8 +13,8 @@
 .button {
   background-color: white;
   border-radius: 3px;
-  border: 2px solid #ce93db;
-  color: #ce93db;
+  border: 2px solid #a9a9a9;
+  color: #a9a9a9;
   margin: 1em;
   padding: 0.25em 1em;
   min-width: 25px;
@@ -27,9 +27,12 @@
   color: #0f93bb;
 }
 
+.decrease-button {
+  color: #ce93db;
+  border-color: #ce93db;
+}
+
 .reset-button {
-  color: #a9a9a9;
-  border-color: #a9a9a9;
   flex: 100%;
   max-width: 150px;
 }
