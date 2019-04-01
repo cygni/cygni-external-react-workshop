@@ -1,32 +1,32 @@
 # React-workshop för DataTjej med Cygni
-React introduktionsworkshop meed hooks and styled-components - https://datatjej.se/
+React introduktionsworkshop med hooks och styled-components - https://datatjej.se/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Förberedelser / För att komma igång
-Kolla in förberedelsesidan: [Hem](https://github.com/cygni/cygni-datatjej-react/wiki/Hem)
+[Kolla in förberedelsesidan](https://github.com/cygni/cygni-datatjej-react/wiki/Hem)
 
 ## Del 1 - React basics, komponenter, props och state
 
 ### Nybörjare
-1. Skapa en räknare som kan räkna upp med knapptryck
-2. Lägg till en till knapp som låter användaren räkna ned
-3. Lägg till en tredje knapp som låter användaren nollställa räknaren
+1. Skapa en räknare som kan räkna upp med knapptryck. I `App.css` finns några css-klasser som ni kan använda för att styla elementen. Använd `.container` för rootelementet, `.counter` för räknaren och `.button` samt `.increase-button` för knappen.
+2. Lägg till en till knapp som låter användaren räkna ned. Använd css-klassen `.decrease-button` för styling.
+3. Lägg till en tredje knapp som låter användaren nollställa räknaren. Använd css-klassen `.reset-button` för styling.
 
 Exempel på resultat:<br>
 <img src='counter.png'>
 
-### Mellan-nivå
-1. Skapa ett fält som visar hur lång tid det är kvar till en viss (förbestämd) tidpunkt t.ex. nedräkning till julafton
+### Dabbler
+1. Skapa ett fält som visar hur lång tid det är kvar till en viss (förbestämd) tidpunkt, t.ex. nedräkning till julafton
 2. Låt användaren ange datum som det räknas ned till
 3. Bryt ut fälten + input från steg 1 och 2 ovan till en egen komponent så flera nedräknare kan visas samtidigt
 
 Exempel på resultat:
 <img src='countdown.png'>
 
-### Advancerad nivå
-* Skapa en räknare likt 1 på Mellan-nivå men formatera tiden till ett human-friendly format med exempelvis biblioteket `moment`
-* Skapa en räknare som räknar up/ned likt 1-3 på Nybörjar-nivå men använd `useReducer` från React för state-uppdatering 
+### Pro
+* Skapa en räknare likt uppgift 1 på Dabblernivå men formatera tiden till ett human-friendly format med exempelvis biblioteket [`moment`](https://momentjs.com/)
+* Skapa en räknare som räknar upp/ned likt uppgift 1-3 på Nybörjarnivå men använd `useReducer` från React för stateuppdatering
 
 
 Exempel på resultat:
@@ -34,6 +34,18 @@ Exempel på resultat:
 
 ## Del 2 - Styled components
 
+### Nybörjare
+1. Gör om elementet med css-klassen `.container` till en styled div
+2. Gör om elementet med css-klassen `.counter` till en styled component som tar in en prop som bestämmer färgen på texten
+3. Gör om alla knappar med css-klass `.button` till styled components. Ni kan behålla övriga css-klasser.
+4. Gör om knappen med css-klassen `.reset-button` till en egen styled component som baseras på er button component
+
+### Mellannivå
+1. Ge nu er button component en defaultfärg och gör det möjligt att skriva över den färgen med en prop. Färglägg increase button och decrease button, men låt reset button använda defaultfärgen.
+2. Skapa en ny knappkomponent som förutom text även tar in en ikon som prop. Basera sedan er styliserade knappkomponent på denna istället. Tänk på att en egen komponent som ska gå att styla på detta vis måste ta in `className` som en prop.
+
+### Advancerad nivå
+* Teman!
 
 ## Tillgängliga skripts
 
