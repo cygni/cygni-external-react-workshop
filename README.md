@@ -29,11 +29,25 @@ Exempel på resultat:
 * Skapa en räknare som räknar up/ned likt 1-3 på Nybörjar-nivå men använd `useReducer` från React för state-uppdatering 
 
 
+
 Exempel på resultat:
 <img src='countdown-adv.png'>
 
 ## Del 2 - Styled components
 
+### Nybörjare
+1.
+2.
+3.
+
+### Mellan-nivå
+1.
+2.
+3.
+
+### Advancerad Nivå
+* Skapa ett eget tema?
+* 
 
 ## Tillgängliga skripts
 
