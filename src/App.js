@@ -1,5 +1,5 @@
 import React from "react";
-import { MyApp, AppLogo, AppHeader, Code, Heart, Orbit, Cygni } from "./styles";
+import { MyApp, AppLogo, AppHeader, Code, Heart, Orbit, Cygni, Rotated, SizedImage } from "./styles";
 import logo from "./datatjej-logo.png";
 import love from "./love.png";
 import cygniFav from "./cygni-fav.png";
@@ -33,8 +33,16 @@ export default function App() {
       <AppHeader>
         <AppLogo src={logo} alt="logo" />
         <Orbit>
-          <Heart src={love} />
-          <Cygni src={cygniFav} />
+          <Heart >
+            <Rotated >
+              <SizedImage src={love} />
+            </Rotated>
+          </Heart>
+          <Cygni>
+            <Rotated >
+              <SizedImage src={cygniFav} />
+            </Rotated>
+          </Cygni>
         </Orbit>
         <p>
           Edit <Code>src/App.js</Code> and save to reload.
