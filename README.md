@@ -34,6 +34,19 @@ Exempel på resultat:
 
 ## Del 2 - Styled components
 
+### Nybörjare
+1.
+2.
+3.
+
+### Mellan-nivå
+1.
+2.
+3.
+
+### Advancerad Nivå
+* Skapa ett eget tema?
+* 
 
 ## Tillgängliga skripts
 

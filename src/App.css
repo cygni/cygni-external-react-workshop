@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.counter {
+  font-size: 8em;
+  flex-grow: 1;
+  flex: 100%;
+}
+
+.button {
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid #ce93db;
+  color: #ce93db;
+  margin: 1em;
+  padding: 0.25em 1em;
+  min-width: 25px;
+  max-width: 50px;
+  flex: auto;
+}
+
+.increase-button {
+  border-color: #0f93bb;
+  color: #0f93bb;
+}
+
+.reset-button {
+  color: #a9a9a9;
+  border-color: #a9a9a9;
+  flex: 100%;
+  max-width: 150px;
+}
