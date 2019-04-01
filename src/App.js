@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useReducer } from "react";
+import { ThemeProvider } from "styled-components";
 import {
   AppLogo,
   AppHeader,
@@ -8,7 +9,10 @@ import {
   Container,
   Count,
   MyApp,
-  ResetButton
+  ResetButton,
+  ThemedTextContainer,
+  ThemedDateInput,
+  theme
 } from "./styles";
 import moment from "moment";
 import "./App.css";
@@ -26,7 +30,10 @@ const Counter = props => {
       <Button color={"#ce93db"} onClick={() => setCounter(count - 1)}>
         -
       </Button>
-      <ResetButton icon="👻" onClick={() => setCounter(props.initialCount || 0)}>
+      <ResetButton
+        icon="👻"
+        onClick={() => setCounter(props.initialCount || 0)}
+      >
         Reset
       </ResetButton>
     </Container>
@@ -45,16 +52,16 @@ const CountdownCounter = () => {
   });
 
   return (
-    <div>
-      <input
+    <Container>
+      <ThemedDateInput
         type="date"
         onChange={e => setGoalDate(new Date(e.target.value))}
       />
-      <div>
+      <ThemedTextContainer>
         Det är {(goalDate - now) / (3600 * 24 * 1000)} dagar till{" "}
         {goalDate.toLocaleDateString()}
-      </div>
-    </div>
+      </ThemedTextContainer>
+    </Container>
   );
 };
 
@@ -71,16 +78,16 @@ const CountdownHumanFriendlyCounter = () => {
   });
 
   return (
-    <div>
-      <input
+    <Container>
+      <ThemedDateInput
         type="date"
         onChange={e => setGoalDate(new moment(e.target.value))}
       />
-      <div>
+      <ThemedTextContainer>
         It's {moment.duration(goalDate.diff(now)).humanize()} to{" "}
         {goalDate.format("LLLL")}
-      </div>
-    </div>
+      </ThemedTextContainer>
+    </Container>
   );
 };
 
@@ -119,25 +126,27 @@ const CounterWithReducer = () => {
 
 export default function App() {
   return (
-    <MyApp>
-      <AppHeader>
-        <AppLogo src={logo} alt="logo" />
-        <p>
-          Edit <Code>src/App.js</Code> and save to reload.
-        </p>
-        <AppLink
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </AppLink>
-      </AppHeader>
+    <ThemeProvider theme={theme}>
+      <MyApp>
+        <AppHeader>
+          <AppLogo src={logo} alt="logo" />
+          <p>
+            Edit <Code>src/App.js</Code> and save to reload.
+          </p>
+          <AppLink
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </AppLink>
+        </AppHeader>
 
-      {<Counter />}
-      {<CounterWithReducer />}
-      {<CountdownCounter />}
-      {<CountdownHumanFriendlyCounter />}
-    </MyApp>
+        {<Counter />}
+        {<CounterWithReducer />}
+        {<CountdownCounter />}
+        {<CountdownHumanFriendlyCounter />}
+      </MyApp>
+    </ThemeProvider>
   );
 }

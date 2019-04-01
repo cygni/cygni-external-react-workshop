@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled, { withTheme, keyframes } from "styled-components";
 
 export const MyApp = styled.div`
   * {
@@ -85,3 +85,24 @@ export const ResetButton = styled(Button)`
   flex: 100%;
   max-width: 150px;
 `;
+
+const TextContainer = styled(Container)`
+  color: ${props => props.theme.color || "#000"};
+  background-color: ${props => props.theme.bgColor || "#fff"};
+`;
+
+export const ThemedTextContainer = withTheme(TextContainer);
+
+const StyledDate = styled.input.attrs({ type: "date" })`
+  background-color: ${props => props.theme.bgColor || "#fff"};
+  color: ${props => props.theme.dateColor || "#ff00ff"};
+  outline: none;
+`;
+
+export const ThemedDateInput = withTheme(StyledDate);
+
+export const theme = {
+  color: "#f06292",
+  dateColor: "#b19cd9",
+  bgColor: "#fff"
+};
