@@ -39,13 +39,9 @@ export default function App() {
         <p>
           Edit <Code>src/App.js</Code> and save to reload.
         </p>
-        <AppLink
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </AppLink>
+        <div>
+          Put your code here (in App.js)
+        </div>
       </AppHeader>
     </MyApp>
   );

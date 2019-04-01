@@ -74,22 +74,22 @@ export const Orbit = styled.div`
 
 export const Heart = styled.img`
   position: absolute;
-  margin-left: -10em;
+  margin-left: -12em;
   margin-top: -7em;
   height: 4em;
   pointer-events: none;
-  transform-origin: 10em center;
-  animation: ${rotateNegative360} 3s linear infinite;
+  transform-origin: 12em center;
+  animation: ${rotateNegative360} 10s linear infinite;
 `;
 
 
 export const Cygni = styled.img`
   position: absolute;
-  margin-left: -10em;
+  margin-left: -12em;
   margin-top: -7em;
   height: 4em;
   pointer-events: none;
-  transform-origin: 10em center;
-  animation: ${rotateNegative360OffsetHalf} 3s linear infinite;
+  transform-origin: 12em center;
+  animation: ${rotateNegative360OffsetHalf} 10s linear infinite;
 `;
 
