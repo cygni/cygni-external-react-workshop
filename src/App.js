@@ -101,15 +101,24 @@ function reducer(state, action) {
 const CounterWithReducer = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <div>
-      <span>{state.count}</span>
-      <button class="button" onClick={() => dispatch({ type: "increment" })}>
+    <div class="container">
+      <span class="counter">{state.count}</span>
+      <button
+        class="button increase-button"
+        onClick={() => dispatch({ type: "increment" })}
+      >
         +
       </button>
-      <button class="button" onClick={() => dispatch({ type: "decrement" })}>
+      <button
+        class="button decrease-button"
+        onClick={() => dispatch({ type: "decrement" })}
+      >
         -
       </button>
-      <button class="button" onClick={() => dispatch({ type: "reset" })}>
+      <button
+        class="button reset-button"
+        onClick={() => dispatch({ type: "reset" })}
+      >
         Reset
       </button>
     </div>
@@ -119,13 +128,12 @@ const CounterWithReducer = () => {
 export default function App() {
   return (
     <MyApp>
-      <AppHeader className="App-header">
+      <AppHeader>
         <AppLogo src={logo} alt="logo" />
         <p>
           Edit <Code>src/App.js</Code> and save to reload.
         </p>
         <AppLink
-          className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -134,8 +142,8 @@ export default function App() {
         </AppLink>
       </AppHeader>
 
-      {<Counter />}
-      {/*<CountdownHumanFriendlyCounter />*/}
+      {/*<Counter />*/}
+      {<CountdownHumanFriendlyCounter />}
       <CounterWithReducer />
     </MyApp>
   );
