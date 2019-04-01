@@ -62,7 +62,7 @@ export const rotateNegative360OffsetHalf = keyframes`
 
 
 export const AppLogo = styled.img`
-  animation: ${rotate360} infinite 20s linear;
+  //animation: ${rotate360} infinite 20s linear;
   height: 10em;
   pointer-events: none;
 `;
@@ -78,7 +78,7 @@ export const Heart = styled.div`
   margin-top: -7em;
   pointer-events: none;
   transform-origin: 12em center;
-  animation: ${rotateNegative360} 10s linear infinite;
+  animation: ${rotate360} 10s linear infinite;
 `;
 
 export const Rotated = styled.div`

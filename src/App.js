@@ -33,16 +33,16 @@ export default function App() {
       <AppHeader>
         <AppLogo src={logo} alt="logo" />
         <Orbit>
-          <Heart >
-            <Rotated >
-              <SizedImage src={love} />
-            </Rotated>
-          </Heart>
           <Cygni>
             <Rotated >
               <SizedImage src={cygniFav} />
             </Rotated>
           </Cygni>
+          <Heart >
+            <Rotated >
+              <SizedImage src={love} />
+            </Rotated>
+          </Heart>
         </Orbit>
         <p>
           Edit <Code>src/App.js</Code> and save to reload.
