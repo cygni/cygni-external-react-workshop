@@ -1,5 +1,5 @@
 import React from "react";
-import { MyApp, AppLogo, AppHeader, AppLink, Code, Heart, Orbit, Cygni } from "./styles";
+import { MyApp, AppLogo, AppHeader, Code, Heart, Orbit, Cygni } from "./styles";
 import logo from "./datatjej-logo.png";
 import love from "./love.png";
 import cygniFav from "./cygni-fav.png";

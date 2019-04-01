@@ -74,7 +74,7 @@ export const Orbit = styled.div`
 
 export const Heart = styled.img`
   position: absolute;
-  margin-left: -12em;
+  margin-left: -11em;
   margin-top: -7em;
   height: 4em;
   pointer-events: none;
