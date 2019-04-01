@@ -8,22 +8,22 @@ const Counter = props => {
   const [count, setCounter] = useState(props.initialCount || 0);
 
   return (
-    <div class="container">
-      <span class="counter">{count}</span>
+    <div className="container">
+      <span className="counter">{count}</span>
       <button
-        class="button increase-button"
+        className="button increase-button"
         onClick={() => setCounter(count + 1)}
       >
         +
       </button>
       <button
-        class="button decrease-button"
+        className="button decrease-button"
         onClick={() => setCounter(count - 1)}
       >
         -
       </button>
       <button
-        class="button reset-button"
+        className="button reset-button"
         onClick={() => setCounter(props.initialCount || 0)}
       >
         Reset
@@ -101,22 +101,22 @@ function reducer(state, action) {
 const CounterWithReducer = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <div class="container">
-      <span class="counter">{state.count}</span>
+    <div className="container">
+      <span className="counter">{state.count}</span>
       <button
-        class="button increase-button"
+        className="button increase-button"
         onClick={() => dispatch({ type: "increment" })}
       >
         +
       </button>
       <button
-        class="button decrease-button"
+        className="button decrease-button"
         onClick={() => dispatch({ type: "decrement" })}
       >
         -
       </button>
       <button
-        class="button reset-button"
+        className="button reset-button"
         onClick={() => dispatch({ type: "reset" })}
       >
         Reset
@@ -143,7 +143,7 @@ export default function App() {
       </AppHeader>
 
       {/*<Counter />*/}
-      {<CountdownHumanFriendlyCounter />}
+      {/*<CountdownHumanFriendlyCounter />*/}
       <CounterWithReducer />
     </MyApp>
   );

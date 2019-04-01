@@ -47,3 +47,9 @@ export const AppLogo = styled.img`
   height: 20vmin;
   pointer-events: none;
 `;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
