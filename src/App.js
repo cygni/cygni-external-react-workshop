@@ -3,27 +3,6 @@ import { MyApp, AppLogo, AppHeader, AppLink, Code } from "./styles";
 import logo from "./logo.svg";
 import "./App.css";
 
-/* Att använda i Del 1
-<div className="container">
-<span className="counter">count</erspan>
-<button
-  className="button increase-button"
->
-  +
-</button>
-<button
-  className="button decrease-button"
->
-  -
-</button>
-<button
-  className="button reset-button"
->
-  Reset
-</button>
-</div>
-*/
-
 export default function App() {
   return (
     <MyApp>
