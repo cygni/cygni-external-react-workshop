@@ -40,11 +40,11 @@ Exempel på resultat:
 3. Gör om alla knappar med css-klass `.button` till styled components. Ni kan behålla övriga css-klasser.
 4. Gör om knappen med css-klassen `.reset-button` till en egen styled component som baseras på er button component
 
-### Mellannivå
+### Dabbler
 1. Ge nu er button component en defaultfärg och gör det möjligt att skriva över den färgen med en prop. Färglägg increase button och decrease button, men låt reset button använda defaultfärgen.
 2. Skapa en ny knappkomponent som förutom text även tar in en ikon som prop. Basera sedan er styliserade knappkomponent på denna istället. Tänk på att en egen komponent som ska gå att styla på detta vis måste ta in `className` som en prop.
 
-### Advancerad nivå
+### Pro
 * Teman!
 
 ## Tillgängliga skripts
