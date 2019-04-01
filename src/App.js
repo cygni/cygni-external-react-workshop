@@ -1,23 +1,23 @@
-import React from 'react';
-import { MyApp, AppLogo, AppHeader, AppLink, Code } from './styles';
-import logo from './logo.svg';
+import React from "react";
+import { MyApp, AppLogo, AppHeader, AppLink, Code } from "./styles";
+import logo from "./logo.svg";
+import "./App.css";
 
 export default function App() {
   return (
     <MyApp>
-      <AppHeader className="App-header">
+      <AppHeader>
         <AppLogo src={logo} alt="logo" />
         <p>
           Edit <Code>src/App.js</Code> and save to reload.
-          </p>
+        </p>
         <AppLink
-          className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-          </AppLink>
+        </AppLink>
       </AppHeader>
     </MyApp>
   );
