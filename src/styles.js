@@ -62,7 +62,14 @@ export const Count = styled.span`
   flex: 100%;
 `;
 
-export const Button = styled.button`
+const IconButton = ({ className, icon, children }) => (
+  <button className={className}>
+    {icon && <span>{icon}</span>}
+    {children}
+  </button>
+);
+
+export const Button = styled(IconButton)`
   background-color: white;
   border-radius: 3px;
   border: 2px solid ${props => props.color || "#a9a9a9"};
@@ -78,10 +85,3 @@ export const ResetButton = styled(Button)`
   flex: 100%;
   max-width: 150px;
 `;
-
-export const ButtonWithIcon = ({ icon, children }) => (
-  <Button>
-    <span>{icon}</span>
-    {children}
-  </Button>
-);

@@ -26,7 +26,7 @@ const Counter = props => {
       <Button color={"#ce93db"} onClick={() => setCounter(count - 1)}>
         -
       </Button>
-      <ResetButton onClick={() => setCounter(props.initialCount || 0)}>
+      <ResetButton icon="👻" onClick={() => setCounter(props.initialCount || 0)}>
         Reset
       </ResetButton>
     </Container>
