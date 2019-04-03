@@ -55,11 +55,11 @@ Exempel på resultat:
 
 - Skapa ett eget tema med bakgrundsfärg och textfärg
 - Använd ditt tema så att hela din App får möjligheten att utnyttja temat
-- Skapa styled komponents för som tar in tema och använder färgerna ifrån temat samt har default värden.
+- Skapa styled components som tar in temat och använder färgerna från det, och som även har defaultvärden
 
 ## Tillgängliga skripts
 
-I projektmappen så kan du i en terminal köra:
+I projektmappen så kan du i en terminal köra något av följande kommandon:
 
 ### `yarn start` eller `npm start`
 
@@ -67,12 +67,13 @@ Kör appen i development mode.<br>
 Öppna [http://localhost:1337](http://localhost:1337) för att se den i webbläsaren.
 
 Sidan laddar om ifall du gör ändringar i koden.<br>
-Ev lintfel kommer presenteras i konsollen (console)
+Ev lintfel kommer presenteras i konsolen (console)
 
 ### `yarn test` eller `npm test`
 
-Startar testköraren i interkativt läge (interactive watch mode)<br>
-För mer information om att köra tester på engelska: [running tests](https://facebook.github.io/create-react-app/docs/running-tests)
+Startar testköraren i interkativt läge (interactive watch mode)
+
+För mer information om att köra tester (på engelska): [running tests](https://facebook.github.io/create-react-app/docs/running-tests)
 
 ### `yarn build` eller `npm run build`
 
@@ -81,9 +82,9 @@ Bundlar med React i produktionsläge och optimerar bygget för bästa prestanda.
 
 Bygget blir miniferat och filnamnen inkluderar hashar (används för cache-invalidation mm)
 
-För mer information om deployment på engelska: [deployment](https://facebook.github.io/create-react-app/docs/deployment)
+För mer information om deployment (på engelska): [deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Nedan är Create-React-app info på Engelska om mer advancerade bitar, kan ignoreras nu
+## Nedan är info från Create React App på engelska om mer avancerade bitar (kan ignoreras nu)
 
 ### `npm run eject`
 
