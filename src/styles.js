@@ -28,73 +28,46 @@ export const AppHeader = styled.header`
   color: white;
 `;
 
-export const AppLink = styled.a`
-  color: #61dafb;
-`;
-
-export const rotate360 = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-  `;
-
-export const rotateNegative360 = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
-  `;
-
-export const rotateNegative360OffsetHalf = keyframes`
-  from {
-    transform: rotate(180deg);
-  }
-  to {
-    transform: rotate(-180deg);
-  }
-  `;
-
-
-
-export const AppLogo = styled.img`
-  //animation: ${rotate360} infinite 20s linear;
-  height: 10em;
-  pointer-events: none;
-`;
-
-
-export const Orbit = styled.div`
-  position: relative;
-`
-
-export const Heart = styled.div`
-  position: absolute;
-  margin-left: -11em;
-  margin-top: -7em;
-  pointer-events: none;
-  transform-origin: 12em center;
-  animation: ${rotate360} 10s linear infinite;
-`;
-
-export const Rotated = styled.div`
-  transform: rotate(-90deg);
-`
-
-export const Cygni = styled.div`
-  position: absolute;
-  margin-left: -12em;
-  margin-top: -7em;
-  pointer-events: none;
-  transform-origin: 12em center;
-  animation: ${rotateNegative360OffsetHalf} 10s linear infinite;
-`;
-
 export const SizedImage = styled.img`
-  height: 4em;
-`
+  height: ${props => props.height || "4em"};
+`;
 
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const heartbeat = keyframes`
+  {
+    0%
+    {
+      transform: scale( .75 );
+    }
+    20%
+    {
+      transform: scale( 1 );
+    }
+    40%
+    {
+      transform: scale( .75 );
+    }
+    60%
+    {
+      transform: scale( 1 );
+    }
+    80%
+    {
+      transform: scale( .75 );
+    }
+    100%
+    {
+      transform: scale( .75 );
+    }
+  }
+`;
+
+export const HeartBeat = styled.div`
+  animation: ${heartbeat} 1s infinite;
+`;

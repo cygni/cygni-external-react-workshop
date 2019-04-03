@@ -1,49 +1,24 @@
 import React from "react";
-import { MyApp, AppLogo, AppHeader, Code, Heart, Orbit, Cygni, Rotated, SizedImage } from "./styles";
-import logo from "./datatjej-logo.png";
+import { MyApp, AppHeader, Code, HeartBeat, Row, SizedImage } from "./styles";
+import dataTjejLogo from "./datatjej-logo.png";
 import love from "./love.png";
-import cygniFav from "./cygni-fav.png";
+import cygniLogo from "./cygni-vit.png";
 
 import "./App.css";
-
-/* Att använda i Del 1
-<div className="container">
-<span className="counter">count</erspan>
-<button
-  className="button increase-button"
->
-  +
-</button>
-<button
-  className="button decrease-button"
->
-  -
-</button>
-<button
-  className="button reset-button"
->
-  Reset
-</button>
-</div>
-*/
 
 export default function App() {
   return (
     <MyApp>
       <AppHeader>
-        <AppLogo src={logo} alt="logo" />
-        <Orbit>
-          <Cygni>
-            <Rotated >
-              <SizedImage src={cygniFav} />
-            </Rotated>
-          </Cygni>
-          <Heart >
-            <Rotated >
-              <SizedImage src={love} />
-            </Rotated>
-          </Heart>
-        </Orbit>
+        <div>
+          <div>
+            <SizedImage src={cygniLogo} alt="Cygni" />
+          </div>
+          <Row>
+            <HeartBeat><SizedImage src={love} alt="loves" /></HeartBeat>
+            <SizedImage src={dataTjejLogo} alt="DataTjej" height="6em" />
+          </Row>
+        </div>
         <p>
           Edit <Code>src/App.js</Code> and save to reload.
         </p>
