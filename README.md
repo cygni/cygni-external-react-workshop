@@ -9,6 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [Kolla in förberedelsesidan](https://github.com/cygni/cygni-datatjej-react/wiki/Hem)
 
 ## Del 1 - React basics, komponenter, props och state
+Starta med att skapa en tom React app med hjälp av detta kommandot i terminalen: npx create-react-app namnet-på-din-app
 
 ### Nybörjare
 
@@ -58,7 +59,7 @@ Exempel på resultat:
 
 ## Tillgängliga skripts
 
-I projektmappen så kan du i en terminal köra köra:
+I projektmappen så kan du i en terminal köra:
 
 ### `yarn start` eller `npm start`
 
