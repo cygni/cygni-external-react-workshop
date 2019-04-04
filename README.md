@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [Kolla in förberedelsesidan](https://github.com/cygni/cygni-datatjej-react/wiki/Hem)
 
 ## Del 1 - React basics, komponenter, props och state
-Starta med att skapa en tom React app med hjälp av detta kommandot i terminalen: npx create-react-app namnet-på-din-app
+Börja med att klona detta repot eller ladda ner och sen unzippa det.
 
 ### Nybörjare
 
