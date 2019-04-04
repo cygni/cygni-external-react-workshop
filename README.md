@@ -2,6 +2,8 @@
 
 React introduktionsworkshop med hooks och styled-components - https://datatjej.se/
 
+Presentation: https://docs.google.com/presentation/d/1xMxe-1w7Q52SyU_5NP2FdV8EB1JJuFslgOqfLDze6oQ/edit?usp=sharing
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Förberedelser / För att komma igång
