@@ -3,6 +3,27 @@ import { MyApp, AppLogo, AppHeader, AppLink, Code } from './styles';
 import moment from 'moment';
 import logo from './logo.svg';
 
+
+class Example extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      count: 0
+    }
+  }
+  render() {
+    return (
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Click me
+		</button>
+      </div>
+    );
+  }
+}
+
+
 const Counter = props => {
   const [count, setCounter] = useState(props.initialCount || 0)
 
@@ -104,7 +125,8 @@ export default function App() {
 
       {/*<Counter />*/}
       {/*<CountdownHumanFriendlyCounter />*/}
-      <CounterWithReducer />
+      {/*<CounterWithReducer />*/}
+      <Example />
     </MyApp>
   );
 }
