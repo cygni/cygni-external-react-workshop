@@ -10,9 +10,9 @@ export default function App() {
   return (
     <div>
       <ClickCounterExercise />
-      <p>----------------------------</p>
+      <br />
       <DateCountdownExercise />
-      <p>----------------------------</p>
+      <br />
       <HumanfriendlyDateCountdownExercise />
     </div>
   );

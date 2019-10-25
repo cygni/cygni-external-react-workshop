@@ -20,7 +20,10 @@ export default function HumanfriendlyDateCountdownExercise() {
         type="date"
         onChange={event => setNewDate(new moment(event.target.value))}
       />
-      <p>Det är {moment.duration(goalDate.diff(now)).humanize()} kvar till</p>
+      <p>
+        It's {moment.duration(goalDate.diff(now)).humanize()} to{" "}
+        {goalDate.format("LL")}
+      </p>
     </div>
   );
 }
