@@ -1,19 +1,20 @@
 import styled, { keyframes } from "styled-components";
+import React from "react";
 
 export const MyApp = styled.div`
   * {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   text-align: center;
 `;
 
 export const Code = styled.code`
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 `;
 
@@ -46,4 +47,3 @@ export const AppLogo = styled.img`
   height: 40vmin;
   pointer-events: none;
 `;
-

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>React-workshop för DataTjej med Cygni</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="react-workshop-f%c3%b6r-datatjej-med-cygni">React-workshop för DataTjej med Cygni</h1>
+<p>React introduktionsworkshop med hooks och styled-components - <a href="https://datatjej.se/">https://datatjej.se/</a></p>
+<p>Presentation: <a href="https://docs.google.com/presentation/d/1BNrUQVhDXeQ_qCnwo8XmwIlcrcmjJtoQ8Ql75lii_X8/edit?usp=sharing">https://docs.google.com/presentation/d/1BNrUQVhDXeQ_qCnwo8XmwIlcrcmjJtoQ8Ql75lii_X8/edit?usp=sharing</a>
+This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a>.</p>
+<h2 id="f%c3%b6rberedelser--f%c3%b6r-att-komma-ig%c3%a5ng">Förberedelser / För att komma igång</h2>
+<p>Installera <a href="https://code.visualstudio.com/">Visual Studio Code</a> (eller annan lämplig IDE)</p>
+<h2 id="del-1---react-basics-komponenter-props-och-state">Del 1 - React basics, komponenter, props och state</h2>
+<p>Börja med att klona detta repot eller ladda ner och sen unzippa det.</p>
+<h3 id="nyb%c3%b6rjare">Nybörjare</h3>
+<p>Följande övningar ska göras i filen 'CounterExercise.js'.</p>
+<ol>
+<li>Skapa en räknare som kan räkna upp med knapptryck. I <code>App.css</code> finns några css-klasser som ni kan använda för att styla elementen. Använd <code>.container</code> för rootelementet, <code>.counter</code> för räknaren och <code>.button</code> samt <code>.increase-button</code> för knappen.</li>
+<li>Lägg till en till knapp som låter användaren räkna ned. Använd css-klassen <code>.decrease-button</code> för styling.</li>
+<li>Lägg till en tredje knapp som låter användaren nollställa räknaren. Använd css-klassen <code>.reset-button</code> för styling.</li>
+</ol>
+<p>Exempel på resultat:<br>
+<img src='counter.png'></p>
+<h3 id="dabbler">Dabbler</h3>
+<p>Följande övningar ska göras i filen 'DateCountdownExercise.js'.</p>
+<ol>
+<li>Skapa ett fält som visar hur lång tid det är kvar till en viss (förbestämd) tidpunkt, t.ex. nedräkning till julafton</li>
+<li>Låt användaren ange datum som det räknas ned till</li>
+</ol>
+<p>Exempel på resultat:
+<img src='countdown.png'></p>
+<h3 id="pro">Pro</h3>
+<p>Följande övning ska göras i filen 'HumanfriendlyDateCountdownExercise.js'.</p>
+<ul>
+<li>Skapa en räknare likt uppgiften på Dabblernivå men formatera tiden till ett human-friendly format med exempelvis biblioteket <a href="https://momentjs.com/"><code>moment</code></a></li>
+</ul>
+<p>Exempel på resultat:
+<img src='countdown-adv.png'></p>
+<h2 id="del-2---styled-components">Del 2 - Styled components</h2>
+<h3 id="nyb%c3%b6rjare-1">Nybörjare</h3>
+<p>Skapa de stylade komponenterna i filen 'style.js'.</p>
+<ol>
+<li>Gör om elementet med css-klassen <code>.container</code> till en styled div</li>
+<li>Gör om elementet med css-klassen <code>.counter</code> till en styled component som tar in en prop som bestämmer färgen på texten</li>
+<li>Gör om alla knappar med css-klass <code>.button</code> till styled components. Ni kan behålla övriga css-klasser.</li>
+<li>Gör om knappen med css-klassen <code>.reset-button</code> till en egen styled component som baseras på er button component</li>
+</ol>
+<h3 id="dabbler-1">Dabbler</h3>
+<ol>
+<li>Ge nu er button component en defaultfärg och gör det möjligt att skriva över den färgen med en prop. Färglägg increase button och decrease button, men låt reset button använda defaultfärgen.</li>
+<li>Skapa en ny knappkomponent som förutom text även tar in en ikon som prop. Basera sedan er styliserade knappkomponent på denna istället. Tänk på att en egen komponent som ska gå att styla på detta vis måste ta in <code>className</code> som en prop.</li>
+</ol>
+<h2 id="tillg%c3%a4ngliga-skripts">Tillgängliga skripts</h2>
+<p>I projektmappen så kan du i en terminal köra följande kommandon:</p>
+<h3 id="npm-start"><code>npm start</code></h3>
+<p>Kör appen i development mode.<br>
+Öppna <a href="http://localhost:1337">http://localhost:1337</a> för att se den i webbläsaren.</p>
+<p>Sidan laddar om ifall du gör ändringar i koden.<br>
+Ev lintfel kommer presenteras i konsolen (console)</p>
+<h3 id="npm-test"><code>npm test</code></h3>
+<p>Startar testköraren i interkativt läge (interactive watch mode)</p>
+<p>För mer information om att köra tester (på engelska): <a href="https://facebook.github.io/create-react-app/docs/running-tests">running tests</a></p>
+<h3 id="npm-run-build"><code>npm run build</code></h3>
+<p>Bygger appen för produktion till <code>build</code>-mappen.<br>
+Bundlar med React i produktionsläge och optimerar bygget för bästa prestanda.</p>
+<p>Bygget blir miniferat och filnamnen inkluderar hashar (används för cache-invalidation mm)</p>
+<p>För mer information om deployment (på engelska): <a href="https://facebook.github.io/create-react-app/docs/deployment">deployment</a></p>
+<h2 id="nedan-%c3%a4r-info-fr%c3%a5n-create-react-app-p%c3%a5-engelska-om-mer-avancerade-bitar-kan-ignoreras-nu">Nedan är info från Create React App på engelska om mer avancerade bitar (kan ignoreras nu)</h2>
+<h3 id="npm-run-eject"><code>npm run eject</code></h3>
+<p><strong>Note: this is a one-way operation. Once you <code>eject</code>, you can’t go back!</strong></p>
+<p>If you aren’t satisfied with the build tool and configuration choices, you can <code>eject</code> at any time. This command will remove the single build dependency from your project.</p>
+<p>Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except <code>eject</code> will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.</p>
+<p>You don’t have to ever use <code>eject</code>. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.</p>
+<h2 id="learn-more">Learn More</h2>
+<p>You can learn more in the <a href="https://facebook.github.io/create-react-app/docs/getting-started">Create React App documentation</a>.</p>
+<p>To learn React, check out the <a href="https://reactjs.org/">React documentation</a>.</p>
+<h3 id="code-splitting">Code Splitting</h3>
+<p>This section has moved here: <a href="https://facebook.github.io/create-react-app/docs/code-splitting">https://facebook.github.io/create-react-app/docs/code-splitting</a></p>
+<h3 id="analyzing-the-bundle-size">Analyzing the Bundle Size</h3>
+<p>This section has moved here: <a href="https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size">https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size</a></p>
+<h3 id="making-a-progressive-web-app">Making a Progressive Web App</h3>
+<p>This section has moved here: <a href="https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app">https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app</a></p>
+<h3 id="advanced-configuration">Advanced Configuration</h3>
+<p>This section has moved here: <a href="https://facebook.github.io/create-react-app/docs/advanced-configuration">https://facebook.github.io/create-react-app/docs/advanced-configuration</a></p>
+<h3 id="deployment">Deployment</h3>
+<p>This section has moved here: <a href="https://facebook.github.io/create-react-app/docs/deployment">https://facebook.github.io/create-react-app/docs/deployment</a></p>
+<h3 id="npm-run-build-fails-to-minify"><code>npm run build</code> fails to minify</h3>
+<p>This section has moved here: <a href="https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify">https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify</a></p>
+
+    </body>
+    </html>
