@@ -36,9 +36,13 @@ Exempel på resultat:
 <img src='countdown.png'>
 
 ### Pro
+Följande övning ska göras i filen 'DateCountdownExercise.js'
+
+1. Uppdatera tiden som är kvar till angivet datum varje sekund med hjälp av useEffect().
+
 Följande övning ska göras i filen 'HumanfriendlyDateCountdownExercise.js'.
 
-- Skapa en räknare likt uppgiften på Dabblernivå men formatera tiden till ett human-friendly format med exempelvis biblioteket [`moment`](https://momentjs.com/)
+2. Skapa en räknare likt uppgiften på Dabblernivå men formatera tiden till ett human-friendly format med exempelvis biblioteket [`moment`](https://momentjs.com/)
 
 Exempel på resultat:
 <img src='countdown-adv.png'>
