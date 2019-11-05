@@ -11,15 +11,18 @@
 }
 
 .button {
-  background-color: white;
   border-radius: 3px;
-  border: 2px solid #ce93db;
-  color: #ce93db;
+  background-color: white;
   margin: 1em;
   padding: 0.25em 1em;
   min-width: 25px;
   max-width: 50px;
   flex: auto;
+}
+
+.decrease-button {
+  color: #ce93db;
+  border: 2px solid #ce93db;
 }
 
 .increase-button {
