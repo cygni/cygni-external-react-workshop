@@ -6,15 +6,14 @@ Presentation: https://docs.google.com/presentation/d/1BNrUQVhDXeQ_qCnwo8XmwIlcrc
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Förberedelser / För att komma igång
-
-1. Installera [Visual Studio Code](https://code.visualstudio.com/) (eller annan lämplig IDE)
+1. Börja med att klona detta repot eller ladda ner och sen unzippa det.
+2. Installera [Visual Studio Code](https://code.visualstudio.com/) (eller annan lämplig IDE)
      * Installera plugin för styled component: Öppna Visual Studio Code, tryck `CTRL + P` och skriv in `ext install vscode-styled-components` 
-2. Installera [NPM](https://github.com/cygni/cygni-datatjej-react/wiki/Installera-NPM)
-3. Stå i projektmappen och skriv `npm install` i terminalen 
-4. Skriv `npm start` i terminalen för att köra projektet
+3. Installera [NPM](https://github.com/cygni/cygni-datatjej-react/wiki/Installera-NPM)
+4. Stå i projektmappen och skriv `npm install` i terminalen 
+5. Skriv `npm start` i terminalen för att köra projektet
 
 ## Del 1 - React basics, komponenter, props och state
-Börja med att klona detta repot eller ladda ner och sen unzippa det.
 
 ### Nybörjare
 Följande övningar ska göras i filen 'CounterExercise.js'.
