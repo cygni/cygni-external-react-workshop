@@ -7,6 +7,7 @@
 .counter {
   font-size: 8em;
   flex-grow: 1;
+  text-align: center;
   flex: 100%;
 }
 
