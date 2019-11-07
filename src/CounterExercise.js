@@ -10,7 +10,6 @@ export default function ClickCounterExercise() {
         <p> {count}</p>
         <Button
           as="button"
-          type="button"
           color={"turquoise"}
           onClick={() => setCount(count + 1)}
         >
@@ -19,7 +18,6 @@ export default function ClickCounterExercise() {
         <Button
           primary
           as="button"
-          type="button"
           color={"black"}
           onClick={() => setCount(count - 1)}
         >
