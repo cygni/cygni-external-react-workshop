@@ -3,8 +3,7 @@ import moment from "moment";
 import "./App.css";
 
 export default function HumanfriendlyDateCountdownExercise() {
-  const initialDate = "2019-12-24";
-  const [goalDate, setNewDate] = useState(new moment(initialDate));
+  const [goalDate, setNewDate] = useState(new moment());
   const [now, setNow] = useState(new moment());
 
   useEffect(() => {
