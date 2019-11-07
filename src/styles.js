@@ -61,9 +61,9 @@ export const Counter = styled.div`
   flex: 100%;
 `;
 
-const IconButton = ({ className, icon, children }) => (
-  <button className={className}>
-    {icon && <span>{icon}</span>}
+const IconButton = ({ className, children, icon, onClickFunction }) => (
+  <button className={className} onClick={onClickFunction}>
+    {icon}
     {children}
   </button>
 );

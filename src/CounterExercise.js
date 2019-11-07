@@ -25,12 +25,7 @@ export default function ClickCounterExercise() {
         >
           -
         </Button>
-        <ResetButton
-          as="button"
-          type="button"
-          icon="👻"
-          onClick={() => setCount(0)}
-        >
+        <ResetButton icon="👻" onClickFunction={() => setCount(0)}>
           Reset
         </ResetButton>
       </Counter>
