@@ -71,3 +71,10 @@ export const Button = styled.button`
   max-width: 50px;
   flex: auto;
 `;
+
+export const ResetButton = styled(Button)`
+  color: #a9a9a9;
+  border-color: #a9a9a9;
+  flex: 100%;
+  max-width: 150px;
+`;
