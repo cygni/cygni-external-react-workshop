@@ -62,9 +62,20 @@ export const Counter = styled.h2`
   color: ${(props) => props.color};
 `;
 
-export const Button = styled.button`
+const IconButton = ({ className, children, onClick, icon }) => {
+  return (
+    <button className={className} onClick={onClick}>
+      {icon}
+      {children}
+    </button>
+  );
+};
+
+export const Button = styled(IconButton)`
   border-radius: 3px;
-  background-color: white;
+  border: 2px solid ${(props) => props.bgColor || 'black'};
+  background-color: ${(props) => props.bgColor || 'white'};
+  color: ${(props) => props.color || 'black'};
   margin: 1em;
   padding: 0.25em 1em;
   min-width: 25px;

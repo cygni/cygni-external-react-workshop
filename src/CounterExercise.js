@@ -8,13 +8,23 @@ export default function ClickCounterExercise() {
   return (
     <Container>
       <Counter color="hotpink">{count}</Counter>
-      <Button className="increase-button" onClick={() => setCount(count + 1)}>
+      <Button
+        bgColor="#0f93bb"
+        color="white"
+        onClick={() => setCount(count + 1)}
+      >
         +
       </Button>
-      <Button className="decrease-button" onClick={() => setCount(count - 1)}>
+      <Button
+        bgColor="#ce93db"
+        color="white"
+        onClick={() => setCount(count - 1)}
+      >
         -
       </Button>
-      <ResetButton onClick={() => setCount(0)}>Reset</ResetButton>
+      <ResetButton icon="👻" onClick={() => setCount(0)}>
+        Reset
+      </ResetButton>
     </Container>
   );
 }
