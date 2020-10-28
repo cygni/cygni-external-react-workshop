@@ -50,7 +50,7 @@ Exempel på resultat:<br><img src='counter.png'>
 
 _Följande övningar ska göras i filen 'ReducerCounterExercise.js'._
 
-Bygg samma counter som innan fast använd nu **reducer hook** istället.
+Bygg samma counter som innan, fast använd nu **reducer hook** istället.
 
 &nbsp;
 
@@ -110,3 +110,6 @@ You can learn more in the
 [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+Short "kata" exercises for learning React:
+[React Katas](https://www.codewars.com/collections/react-katas).
