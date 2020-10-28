@@ -50,7 +50,7 @@ Exempel på resultat:<br><img src='counter.png'>
 
 _Följande övningar ska göras i filen 'ReducerCounterExercise.js'._
 
-Bygg samma counter som innan, fast använd nu **reducer hook** istället.
+Bygg samma counter som innan, fast använd nu **reducer hook** istället. Skapa en reducer som har två actions för **increment** och **decrement** och låt knapparna dispatcha motsvarande action.
 
 &nbsp;
 
@@ -80,6 +80,8 @@ _Följande övning ska göras i filen 'HumanfriendlyDateCountdownExercise.js'._
 
 Exempel på resultat: <img src='countdown-adv.png'>
 
+&nbsp;
+
 ## Workshop 2 - Styled components
 
 **Nybörjare**
@@ -103,6 +105,8 @@ _Skapa de stylade komponenterna i filen 'style.js'._
    Basera sedan er styliserade knappkomponent på denna istället. Tänk på att en
    egen komponent som ska gå att styla på detta vis måste ta in `className` som
    en prop.
+
+&nbsp;
 
 ## Learn More
 
