@@ -10,6 +10,8 @@ https://docs.google.com/presentation/d/1JtLFMIPqcdP6sG-VSYpgcsZMcscncsvO7XHS2YEK
 **Presentation Linköping**
 https://docs.google.com/presentation/d/1BNrUQVhDXeQ_qCnwo8XmwIlcrcmjJtoQ8Ql75lii_X8/edit?usp=sharing
 
+&nbsp;
+
 ## Förberedelser / För att komma igång
 
 1. Börja med att klona detta repot eller ladda ner och sen unzippa det.
@@ -18,15 +20,17 @@ https://docs.google.com/presentation/d/1BNrUQVhDXeQ_qCnwo8XmwIlcrcmjJtoQ8Ql75lii
    - Installera plugin för styled component: Öppna Visual Studio Code, tryck
      `CTRL + P` och skriv in `ext install vscode-styled-components`
 3. Installera
-   [NPM](https://github.com/cygni/cygni-datatjej-react/wiki/Installera-NPM)
+   [NPM](https://github.com/cygni/cygni-external-react-workshop/wiki/Installera-NPM)
 4. Stå i projektmappen och skriv `npm install` i terminalen
 5. Skriv `npm start` i terminalen för att köra projektet
+
+&nbsp;
 
 ## Workshop 1
 
 _React basics, komponenter, props och state_
 
-**Nybörjare**
+**Nybörjare (Counter) Del 1**
 
 _Följande övningar ska göras i filen 'CounterExercise.js'._
 
@@ -38,7 +42,17 @@ _Följande övningar ska göras i filen 'CounterExercise.js'._
    `.container` för rootelementet. Applicera följande klasser på rätt element:
    `.counter, .button, .increase-button, decrease-button, .reset-button`
 
-Exempel på resultat:<br> <img src='counter.png'>
+Exempel på resultat:<br><img src='counter.png'>
+
+&nbsp;
+
+**Nybörjare (Counter) Del 2**
+
+_Följande övningar ska göras i filen 'ReducerCounterExercise.js'._
+
+Bygg samma counter som innan, fast använd nu **reducer hook** istället. Skapa en reducer som har två actions för **increment** och **decrement** och låt knapparna dispatcha motsvarande action.
+
+&nbsp;
 
 **Dabbler**
 
@@ -62,9 +76,11 @@ _Följande övning ska göras i filen 'HumanfriendlyDateCountdownExercise.js'._
 
 1. Skapa en nedräknare likt uppgiften på Dabblernivå men formatera tiden till
    ett human-friendly format med exempelvis biblioteket
-   [`moment`](https://momentjs.com/). Detta är redan installerat i projektet.
+   [`date-fns`](https://date-fns.org/). Paketet är redan installerat, men kräver att du importerar de funktioner som du behöver i filen.
 
 Exempel på resultat: <img src='countdown-adv.png'>
+
+&nbsp;
 
 ## Workshop 2 - Styled components
 
@@ -90,9 +106,14 @@ _Skapa de stylade komponenterna i filen 'style.js'._
    egen komponent som ska gå att styla på detta vis måste ta in `className` som
    en prop.
 
+&nbsp;
+
 ## Learn More
 
 You can learn more in the
 [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+Short "kata" exercises for learning React:
+[React Katas](https://www.codewars.com/collections/react-katas).
