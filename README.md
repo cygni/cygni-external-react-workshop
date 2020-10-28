@@ -1,16 +1,4 @@
-# React-workshop för DataTjej med Cygni
-
-_React introduktionsworkshop med hooks och styled-components -
-https://datatjej.se/. This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app)._
-
-**Presentation Malmö**
-https://docs.google.com/presentation/d/1JtLFMIPqcdP6sG-VSYpgcsZMcscncsvO7XHS2YEKclw/edit?usp=sharing
-
-**Presentation Linköping**
-https://docs.google.com/presentation/d/1BNrUQVhDXeQ_qCnwo8XmwIlcrcmjJtoQ8Ql75lii_X8/edit?usp=sharing
-
-&nbsp;
+# React-workshop med Cygni
 
 ## Förberedelser / För att komma igång
 
