@@ -26,9 +26,13 @@ _Följande övningar ska göras i filen 'DateCountdownExercise.js'._
 2. Använd new Date()
 3. Bra funktioner date.getTime(), Math.abs(), Math.ceil()
 
+&nbsp;
+
 **Pro del 1**
 
 1. useEffect doc: https://reactjs.org/docs/hooks-effect.html
+
+&nbsp;
 
 **Pro del 2**
 
