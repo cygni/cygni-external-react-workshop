@@ -7,8 +7,8 @@ _React basics, komponenter, props och state_
 **Nybörjare (Counter) Del 1**
 
 1. useState doc: https://reactjs.org/docs/hooks-state.html
-2. <button onClick={<din funktion>}>
-3. <div className='css klass'>
+2. \<button onClick \>
+3. \<div className \>
 
 &nbsp;
 
@@ -22,7 +22,7 @@ _React basics, komponenter, props och state_
 
 _Följande övningar ska göras i filen 'DateCountdownExercise.js'._
 
-1. <input type='date' onChange={<din funktion>}>
+1. \<input type='date' onClick \>
 2. Använd new Date()
 3. Bra funktioner date.getTime(), Math.abs(), Math.ceil()
 
