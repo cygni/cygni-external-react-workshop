@@ -96,6 +96,39 @@ _Skapa de stylade komponenterna i filen 'style.js'._
 
 &nbsp;
 
+## Workshop 2 - Typescript 
+_Följande övningar ska göras i mappen 'ts-excercises'. All information finns i varje fil, exempelvis excercise-1.tsx ._
+
+_Det finns fem Typescript övningar, om du skulle bli klar rekommenderar vi att ni kollar på sektionen Learn more alternativt kollar vidare på sektion 3 om styled components._
+
+## Workshop 3 - Styled components
+
+**Nybörjare**
+
+_Styled components är ett bra sätt att styla React komponenter, dokumentation finns här: https://styled-components.com/._
+
+_Skapa de stylade komponenterna i filen 'style.js'._
+
+1. Gör om elementet med css-klassen `.container` till en styled section
+2. Gör om elementet med css-klassen `.counter` till en styled component som tar
+   in en prop som bestämmer färgen på texten
+3. Gör om alla knappar med css-klass `.button` till styled components. Ni kan
+   behålla övriga css-klasser.
+4. Gör om knappen med css-klassen `.reset-button` till en egen styled component
+   som baseras på er button component
+
+**Dabbler**
+
+1. Ge nu er button component en defaultfärg och gör det möjligt att skriva över
+   den färgen med en prop. Färglägg increase button och decrease button, men låt
+   reset button använda defaultfärgen.
+2. Skapa en ny knappkomponent som förutom text även tar in en ikon som prop.
+   Basera sedan er styliserade knappkomponent på denna istället. Tänk på att en
+   egen komponent som ska gå att styla på detta vis måste ta in `className` som
+   en prop.
+
+&nbsp;
+
 ## Learn More
 
 You can learn more in the
@@ -105,3 +138,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Short "kata" exercises for learning React:
 [React Katas](https://www.codewars.com/collections/react-katas).
+
+Typescript documentation: https://www.typescriptlang.org/.
