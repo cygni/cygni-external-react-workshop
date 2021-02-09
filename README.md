@@ -5,8 +5,6 @@
 1. Börja med att klona detta repot eller ladda ner och sen unzippa det.
 2. Installera [Visual Studio Code](https://code.visualstudio.com/) (eller annan
    lämplig IDE)
-   - Installera plugin för styled component: Öppna Visual Studio Code, tryck
-     `CTRL + P` och skriv in `ext install vscode-styled-components`
 3. Installera
    [NPM](https://github.com/cygni/cygni-external-react-workshop/wiki/Installera-NPM)
 4. Stå i projektmappen och skriv `npm install` i terminalen
@@ -14,9 +12,10 @@
 
 &nbsp;
 
-## Workshop 1
+## Workshop 1 - React
 
 _React basics, komponenter, props och state_
+_Följande övningar ska göras i mappen 'react-excercises'._
 
 **Nybörjare (Counter) Del 1**
 
@@ -70,36 +69,12 @@ Exempel på resultat: <img src='docs/countdown-adv.png'>
 
 &nbsp;
 
-## Workshop 2 - Styled components
-
-**Nybörjare**
-
-_Skapa de stylade komponenterna i filen 'style.js'._
-
-1. Gör om elementet med css-klassen `.container` till en styled section
-2. Gör om elementet med css-klassen `.counter` till en styled component som tar
-   in en prop som bestämmer färgen på texten
-3. Gör om alla knappar med css-klass `.button` till styled components. Ni kan
-   behålla övriga css-klasser.
-4. Gör om knappen med css-klassen `.reset-button` till en egen styled component
-   som baseras på er button component
-
-**Dabbler**
-
-1. Ge nu er button component en defaultfärg och gör det möjligt att skriva över
-   den färgen med en prop. Färglägg increase button och decrease button, men låt
-   reset button använda defaultfärgen.
-2. Skapa en ny knappkomponent som förutom text även tar in en ikon som prop.
-   Basera sedan er styliserade knappkomponent på denna istället. Tänk på att en
-   egen komponent som ska gå att styla på detta vis måste ta in `className` som
-   en prop.
-
-&nbsp;
-
 ## Workshop 2 - Typescript 
 _Följande övningar ska göras i mappen 'ts-excercises'. All information finns i varje fil, exempelvis excercise-1.tsx ._
 
 _Det finns fem Typescript övningar, om du skulle bli klar rekommenderar vi att ni kollar på sektionen Learn more alternativt kollar vidare på sektion 3 om styled components._
+
+&nbsp;
 
 ## Workshop 3 - Styled components
 
