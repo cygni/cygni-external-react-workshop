@@ -14,7 +14,8 @@
 
 ## Workshop 1 - React
 
-_React basics, komponenter, props och state_
+_React basics, komponenter, props och state_.
+
 _Följande övningar ska göras i mappen 'react-excercises'._
 
 **Nybörjare (Counter) Del 1**
