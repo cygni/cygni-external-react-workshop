@@ -51,7 +51,7 @@ export function isUser(person: Person) {
 // TODO: remove the comments in the code
 export default function Excercise4() {
   return <div>
-    <h2>TS Excercise 4</h2>
+    <h4>TS Excercise 4</h4>
     {/* {persons.map((person) => {
       let additionalInformation: string;
       if (isAdmin(person)) {

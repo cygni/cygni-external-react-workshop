@@ -15,6 +15,7 @@ export default function App() {
 	return (<>
 		{/* PART 1 - REACT EXCERCISES */}
 		<div>
+			<h2>React Excercises</h2>
 			<ClickCounterExercise />
 			<ReducerCounterExercise />
 			<DateCountdownExercise />
@@ -23,6 +24,7 @@ export default function App() {
 
 		{/* PART 2 - TS EXERCISES */}
 		<div>
+			<h2>TS Excercises</h2>
 			<Excercise1 />
 			<Excercise2 />
 			<Excercise3 />

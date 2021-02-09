@@ -34,7 +34,7 @@ export const users: unknown[] = [
 // TODO: remove the comments in the code
 export default function Excercise1() {
   return <div>
-    <h2>TS Excercise 1</h2>
+    <h4>TS Excercise 1</h4>
     {/* {users.map((user) => {
       return <div>{`Name: ${user.name}, Age: ${user.age}`}</div>
     })} */}

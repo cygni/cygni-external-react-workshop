@@ -56,7 +56,7 @@ export const persons: Person[] = [
 // TODO: remove the comments in the code
 export default function Excercise3() {
   return <div>
-    <h2>TS Excercise 3</h2>
+    <h4>TS Excercise 3</h4>
     {/* {persons.map((person) => {
       let additionalInformation: string;
       if (person.role) {

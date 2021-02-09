@@ -60,7 +60,7 @@ export type Person = unknown;
 // TODO: remove the comments in the code
 export default function Excercise2() {
   return <div>
-    <h2>TS Excercise 2</h2>
+    <h4>TS Excercise 2</h4>
     {/* {persons.map((person) => {
       return <div>{`Name: ${person.name}, Age: ${person.age}`}</div>
     })} */}

@@ -88,7 +88,7 @@ export function filterUsers(persons: Person[], criteria: User): User[] {
 // TODO: remove the comments in the code
 export default function Excercise5() {
   return <div>
-    <h2>TS Excercise 5</h2>
+    <h4>TS Excercise 5</h4>
     {/* {filterUsers( persons, {age: 23}).map((person) => {
       return <div>{`Name: ${person.name}, Age: ${person.age}`}</div>
     })} */}
