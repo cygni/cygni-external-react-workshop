@@ -5,8 +5,6 @@
 1. Börja med att klona detta repot eller ladda ner och sen unzippa det.
 2. Installera [Visual Studio Code](https://code.visualstudio.com/) (eller annan
    lämplig IDE)
-   - Installera plugin för styled component: Öppna Visual Studio Code, tryck
-     `CTRL + P` och skriv in `ext install vscode-styled-components`
 3. Installera
    [NPM](https://github.com/cygni/cygni-external-react-workshop/wiki/Installera-NPM)
 4. Stå i projektmappen och skriv `npm install` i terminalen
@@ -14,9 +12,11 @@
 
 &nbsp;
 
-## Workshop 1
+## Workshop 1 - React
 
-_React basics, komponenter, props och state_
+_React basics, komponenter, props och state_.
+
+_Följande övningar ska göras i mappen 'react-excercises'._
 
 **Nybörjare (Counter) Del 1**
 
@@ -70,9 +70,18 @@ Exempel på resultat: <img src='docs/countdown-adv.png'>
 
 &nbsp;
 
-## Workshop 2 - Styled components
+## Workshop 2 - Typescript 
+_Följande övningar ska göras i mappen 'ts-excercises'. All information finns i varje fil, exempelvis excercise-1.tsx ._
+
+_Det finns fem Typescript övningar, om du skulle bli klar rekommenderar vi att ni kollar på sektionen Learn more alternativt kollar vidare på sektion 3 om styled components._
+
+&nbsp;
+
+## Workshop 3 - Styled components
 
 **Nybörjare**
+
+_Styled components är ett bra sätt att styla React komponenter, dokumentation finns här: https://styled-components.com/._
 
 _Skapa de stylade komponenterna i filen 'style.js'._
 
@@ -105,3 +114,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 Short "kata" exercises for learning React:
 [React Katas](https://www.codewars.com/collections/react-katas).
+
+Typescript documentation: https://www.typescriptlang.org/.
