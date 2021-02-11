@@ -39,3 +39,11 @@ _Följande övningar ska göras i filen 'DateCountdownExercise.js'._
 1. Bibliotek [`date-fns`] doc: https://date-fns.org/
 
 &nbsp;
+
+## Workshop 2
+I varje uppgifts-fil exempelvis src/ts-excercises/excercise1.tsx finns det en länk till relaterad Typescript dokumentation.
+
+&nbsp;
+
+## Workshop 3
+Styled-components dokumentation: https://styled-components.com/
