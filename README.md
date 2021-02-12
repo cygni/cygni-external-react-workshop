@@ -30,7 +30,7 @@ _Följande övningar ska göras i filen 'CounterExercise.js'._
    `.container` för rootelementet. Applicera följande klasser på rätt element:
    `.counter, .button, .increase-button, decrease-button, .reset-button`
 
-Exempel på resultat:<br><img src='docs/counter.png'>
+Exempel på resultat:<br><img src='readme-images/counter.png'>
 
 &nbsp;
 
@@ -49,7 +49,7 @@ _Följande övningar ska göras i filen 'DateCountdownExercise.js'._
 1. Skapa en input där användaren kan ange ett datum att räkna ner till.
 2. Skapa ett element som printar ut hur lång tid det är kvar till angivet datum.
 
-Exempel på resultat: <img src='docs/countdown.png'>
+Exempel på resultat: <img src='readme-images/countdown.png'>
 
 **Pro del 1**
 
@@ -66,7 +66,7 @@ _Följande övning ska göras i filen 'HumanfriendlyDateCountdownExercise.js'._
    ett human-friendly format med exempelvis biblioteket
    [`date-fns`](https://date-fns.org/). Paketet är redan installerat, men kräver att du importerar de funktioner som du behöver i filen.
 
-Exempel på resultat: <img src='docs/countdown-adv.png'>
+Exempel på resultat: <img src='readme-images/countdown-adv.png'>
 
 &nbsp;
 
