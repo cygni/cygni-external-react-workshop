@@ -16,7 +16,7 @@
 
 _React basics, komponenter, props och state_.
 
-_Följande övningar ska göras i mappen 'react-excercises'._
+_Följande övningar ska göras i mappen 'react-exercises'._
 
 **Nybörjare (Counter) Del 1**
 
@@ -71,7 +71,7 @@ Exempel på resultat: <img src='readme-images/countdown-adv.png'>
 &nbsp;
 
 ## Workshop 2 - Typescript 
-_Följande övningar ska göras i mappen 'ts-excercises'. All information finns i varje fil, exempelvis excercise-1.tsx ._
+_Följande övningar ska göras i mappen 'ts-exercises'. All information finns i varje fil, exempelvis exercise-1.tsx ._
 
 _Det finns fem Typescript övningar, om du skulle bli klar rekommenderar vi att ni kollar på sektionen Learn more alternativt kollar vidare på sektion 3 om styled components._
 

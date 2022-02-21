@@ -1,39 +1,11 @@
-.container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+body {
+  color: #231f20;
 }
 
-.counter {
-  font-size: 8em;
-  flex-grow: 1;
+.section-heading {
+  background-color: #000735;
+  color: #eab8b2;
+  margin: 0;
+  padding: 2rem;
   text-align: center;
-  flex: 100%;
-}
-
-.button {
-  border-radius: 3px;
-  background-color: white;
-  margin: 1em;
-  padding: 0.25em 1em;
-  min-width: 25px;
-  max-width: 50px;
-  flex: auto;
-}
-
-.decrease-button {
-  color: #ce93db;
-  border: 2px solid #ce93db;
-}
-
-.increase-button {
-  border-color: #0f93bb;
-  color: #0f93bb;
-}
-
-.reset-button {
-  color: #a9a9a9;
-  border-color: #a9a9a9;
-  flex: 100%;
-  max-width: 150px;
 }

@@ -41,7 +41,7 @@ _Följande övningar ska göras i filen 'DateCountdownExercise.js'._
 &nbsp;
 
 ## Workshop 2
-I varje uppgifts-fil exempelvis src/ts-excercises/excercise1.tsx finns det en länk till relaterad Typescript dokumentation.
+I varje uppgifts-fil exempelvis src/ts-exercises/exercise1.tsx finns det en länk till relaterad Typescript dokumentation.
 
 &nbsp;
 
