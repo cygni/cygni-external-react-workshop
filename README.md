@@ -2,21 +2,19 @@
 
 ## Förberedelser / För att komma igång
 
-1. Börja med att klona detta repot eller ladda ner och sen unzippa det.
+1. Klona detta repo eller ladda ner och unzippa det.
 2. Installera [Visual Studio Code](https://code.visualstudio.com/) (eller annan
    lämplig IDE)
-3. Installera
-   [NPM](https://github.com/cygni/cygni-external-react-workshop/wiki/Installera-NPM)
+3. [Installera node och
+   npm](https://github.com/cygni/cygni-external-react-workshop/wiki/Installera-NPM)
 4. Stå i projektmappen och skriv `npm install` i terminalen
 5. Skriv `npm start` i terminalen för att köra projektet
 
-&nbsp;
+## Workshop 1 - React 101
 
-## Workshop 1 - React
+Grunderna i React: komponenter, props och state.
 
-_React basics, komponenter, props och state_.
-
-_Följande övningar ska göras i mappen 'react-exercises'._
+Följande övningar ska göras i mappen `react-exercises`.
 
 **Nybörjare (Counter) Del 1**
 
@@ -68,51 +66,9 @@ _Följande övning ska göras i filen 'HumanfriendlyDateCountdownExercise.js'._
 
 Exempel på resultat: <img src='readme-images/countdown-adv.png'>
 
-&nbsp;
+## Lär dig mer
 
-## Workshop 2 - Typescript 
-_Följande övningar ska göras i mappen 'ts-exercises'. All information finns i varje fil, exempelvis exercise-1.tsx ._
+Kolla in [Reacts dokumentation](https://reactjs.org/).
 
-_Det finns fem Typescript övningar, om du skulle bli klar rekommenderar vi att ni kollar på sektionen Learn more alternativt kollar vidare på sektion 3 om styled components._
-
-&nbsp;
-
-## Workshop 3 - Styled components
-
-**Nybörjare**
-
-_Styled components är ett bra sätt att styla React komponenter, dokumentation finns här: https://styled-components.com/._
-
-_Skapa de stylade komponenterna i filen 'style.js'._
-
-1. Gör om elementet med css-klassen `.container` till en styled section
-2. Gör om elementet med css-klassen `.counter` till en styled component som tar
-   in en prop som bestämmer färgen på texten
-3. Gör om alla knappar med css-klass `.button` till styled components. Ni kan
-   behålla övriga css-klasser.
-4. Gör om knappen med css-klassen `.reset-button` till en egen styled component
-   som baseras på er button component
-
-**Dabbler**
-
-1. Ge nu er button component en defaultfärg och gör det möjligt att skriva över
-   den färgen med en prop. Färglägg increase button och decrease button, men låt
-   reset button använda defaultfärgen.
-2. Skapa en ny knappkomponent som förutom text även tar in en ikon som prop.
-   Basera sedan er styliserade knappkomponent på denna istället. Tänk på att en
-   egen komponent som ska gå att styla på detta vis måste ta in `className` som
-   en prop.
-
-&nbsp;
-
-## Learn More
-
-You can learn more in the
-[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-Short "kata" exercises for learning React:
+Små "kata"-övningar för att lära sig React:
 [React Katas](https://www.codewars.com/collections/react-katas).
-
-Typescript documentation: https://www.typescriptlang.org/.
