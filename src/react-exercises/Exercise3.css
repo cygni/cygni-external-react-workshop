@@ -1,0 +1,34 @@
+.todo-list {
+  padding: 0;
+}
+
+.todo-list > li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.2s all ease-in;
+}
+
+.todo-list > li.new {
+  background-color: #f9e79f;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.remove-button {
+  background-color: transparent;
+  border: none;
+  color: #dd5928;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.remove-button:hover {
+  color: #b5451c;
+}
