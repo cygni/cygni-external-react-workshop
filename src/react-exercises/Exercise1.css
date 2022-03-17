@@ -1,0 +1,25 @@
+.counter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+.counter {
+  padding: 0 2rem;
+  font-size: 5rem;
+  min-width: 10rem;
+  text-align: center;
+}
+
+.counter-button {
+  font-size: 1.5rem;
+  height: 44px;
+  width: 44px;
+  border-radius: 22px;
+  padding: 0;
+}

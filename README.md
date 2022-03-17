@@ -2,117 +2,93 @@
 
 ## Förberedelser / För att komma igång
 
-1. Börja med att klona detta repot eller ladda ner och sen unzippa det.
-2. Installera [Visual Studio Code](https://code.visualstudio.com/) (eller annan
-   lämplig IDE)
-3. Installera
-   [NPM](https://github.com/cygni/cygni-external-react-workshop/wiki/Installera-NPM)
+1. Klona detta repo eller ladda ner och unzippa det.
+2. Installera [Visual Studio Code](https://code.visualstudio.com/) (eller annan lämplig IDE)
+3. [Installera node och npm](https://github.com/cygni/cygni-external-react-workshop/wiki/Installera-NPM)
 4. Stå i projektmappen och skriv `npm install` i terminalen
 5. Skriv `npm start` i terminalen för att köra projektet
 
-&nbsp;
+## Workshop
 
-## Workshop 1 - React
+Övningarna hittar du i mappen `react-exercises`.
 
-_React basics, komponenter, props och state_.
+### Övning 1. Räkna med state
 
-_Följande övningar ska göras i mappen 'react-excercises'._
+Vi börjar med att skapa en enkel räknare.
 
-**Nybörjare (Counter) Del 1**
+- Använd hooken `useState` för att lagra räknarens värde. Börja med värdet 0.
+- För att skriva ut variabelns värde i html:en omger vi den med måsvingar, t ex `{count}`.
+- Öka värdet med 1 när man klickar på plusknappen. Använd knappens `onClick` för att kalla på funktionen som ändrar
+  värdet.
+- Minska värdet med 1 när man klickar på minusknappen.
 
-_Följande övningar ska göras i filen 'CounterExercise.js'._
+### Övning 2. Räkna med props
 
-1. Skapa ett state som håller countern värde, den ska börja på 0.
-2. Lägg till en knapp som låter använderen räkna upp vid knapptryck.
-3. Lägg till en till knapp som låter användaren räkna ned.
-4. Lägg till en tredje knapp som låter användaren nollställa räknaren.
-5. Styling, i App.css finns där färdiga classer att använda, dessa är:
-   `.container` för rootelementet. Applicera följande klasser på rätt element:
-   `.counter, .button, .increase-button, decrease-button, .reset-button`
+Nu vill vi ha två räknare och summera värdena från dem.
 
-Exempel på resultat:<br><img src='readme-images/counter.png'>
+- Tänk komponenter. Kan vi återanvända koden från förra övningen? Skapa två räknare.
+- En räknare känner bara till sitt eget värde. Hur räknar vi ut summan?
+- Med props kan vi hålla koll på värdena på nivån ovanför räknarna, dvs i förälderkomponenten.
+- Använd hooken `useState` en gång per räknare för att lagra värdena. Nu kan du lätt summera värdena och skriva ut
+  summan.
+- Använd props för att skicka in värdet och funktionen för att uppdatera värdet till motsvarande räknare. Du kan ge dem
+  vilka namn du vill. En bra konvention är att ge props som är funktioner ett namn som börjar med "on",
+  tex `onCountChange`.
+- Hantera dina props i räknarna precis som du hanterade state i förra uppgiften.
 
-&nbsp;
+### Övning 3. TODO: Lära sig React
 
-**Nybörjare (Counter) Del 2**
+Skapa en att-göra-lista.
 
-_Följande övningar ska göras i filen 'ReducerCounterExercise.js'._
+- Flytta punkterna i html-listan till en array. Rendera arrayen mha funktionen `map`. Glöm inte att varje element
+  behöver en unik `key` prop (eller testa att glömma och se hur React påminner dig genom att klaga i konsolen). Använd
+  måsvingar för att exekvera javascript-kod i html:en.
 
-Bygg samma counter som innan, fast använd nu **reducer hook** istället. Skapa en reducer som har två actions för **increment** och **decrement** och låt knapparna dispatcha motsvarande action.
+```jsx
+{
+  items.map(item => <li key={item}>{item}</li>)
+}
+```
 
-&nbsp;
+- Gör det möjligt att checka av punkter, t ex genom att lägga till en `<input type="checkbox" />`.
+- Gör det möjligt att lägga till nya punkter i listan. Använd kunskapen från föregående övningar för att spara värdet
+  från textrutan när man klickar på knappen.
+- Gör det möjligt att ta bort punkter, t ex genom att lägga till en knapp. Du kan använda css-klassen `remove-button`
+  för att styla den.
+- Skriv ut antal saker att göra i webbläsarfliken. Använd hooken `useEffect` för att lyssna på förändringar i listan.
+  Uppdatera titeln med `document.title = "Ny titel"`.
+- Skapa en egen hook som skriver ut saker att göra i webbläsarfliken. Namnet på din hook bör börja med "use" för att
+  visa att det är en hook, t ex `useTodoTitle`.
 
-**Dabbler**
+## Lär dig mer
 
-_Följande övningar ska göras i filen 'DateCountdownExercise.js'._
+Kolla in [Reacts dokumentation](https://reactjs.org/).
 
-1. Skapa en input där användaren kan ange ett datum att räkna ner till.
-2. Skapa ett element som printar ut hur lång tid det är kvar till angivet datum.
-
-Exempel på resultat: <img src='readme-images/countdown.png'>
-
-**Pro del 1**
-
-_Följande övning ska göras i filen 'DateCountdownExercise.js'_
-
-1. Uppdatera tiden som är kvar till angivet datum varje sekund med hjälp av
-   useEffect().
-
-**Pro del 2**
-
-_Följande övning ska göras i filen 'HumanfriendlyDateCountdownExercise.js'._
-
-1. Skapa en nedräknare likt uppgiften på Dabblernivå men formatera tiden till
-   ett human-friendly format med exempelvis biblioteket
-   [`date-fns`](https://date-fns.org/). Paketet är redan installerat, men kräver att du importerar de funktioner som du behöver i filen.
-
-Exempel på resultat: <img src='readme-images/countdown-adv.png'>
-
-&nbsp;
-
-## Workshop 2 - Typescript 
-_Följande övningar ska göras i mappen 'ts-excercises'. All information finns i varje fil, exempelvis excercise-1.tsx ._
-
-_Det finns fem Typescript övningar, om du skulle bli klar rekommenderar vi att ni kollar på sektionen Learn more alternativt kollar vidare på sektion 3 om styled components._
-
-&nbsp;
-
-## Workshop 3 - Styled components
-
-**Nybörjare**
-
-_Styled components är ett bra sätt att styla React komponenter, dokumentation finns här: https://styled-components.com/._
-
-_Skapa de stylade komponenterna i filen 'style.js'._
-
-1. Gör om elementet med css-klassen `.container` till en styled section
-2. Gör om elementet med css-klassen `.counter` till en styled component som tar
-   in en prop som bestämmer färgen på texten
-3. Gör om alla knappar med css-klass `.button` till styled components. Ni kan
-   behålla övriga css-klasser.
-4. Gör om knappen med css-klassen `.reset-button` till en egen styled component
-   som baseras på er button component
-
-**Dabbler**
-
-1. Ge nu er button component en defaultfärg och gör det möjligt att skriva över
-   den färgen med en prop. Färglägg increase button och decrease button, men låt
-   reset button använda defaultfärgen.
-2. Skapa en ny knappkomponent som förutom text även tar in en ikon som prop.
-   Basera sedan er styliserade knappkomponent på denna istället. Tänk på att en
-   egen komponent som ska gå att styla på detta vis måste ta in `className` som
-   en prop.
-
-&nbsp;
-
-## Learn More
-
-You can learn more in the
-[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-Short "kata" exercises for learning React:
+Små "kata"-övningar för att lära sig React:
 [React Katas](https://www.codewars.com/collections/react-katas).
 
-Typescript documentation: https://www.typescriptlang.org/.
+Skapa ditt eget projekt och utforska vidare. För att snabbt komma igång kan du
+använda [Create React App](https://github.com/facebook/create-react-app) som skapar ett projekt åt dig att utgå ifrån:
+
+```shell
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+Det finns flertalet bibliotek som löser saker som navigation, styling och annat du kan tänkas vilja komplettera med. Här
+är några exempel:
+
+- [React Router](https://reactrouter.com/) är en populär lösning för att navigera inom appen. Vanliga `<a>`-taggar
+  laddar om sidan vilket förstör poängen med en Single Page Application. Med ett bibliotek som detta kan React behålla
+  sitt state och bara uppdatera delarna av sidan som påverkas av sidbytet.
+- [Styled Components](https://styled-components.com/) är ett populärt koncept för att skapa komponenter med inbakad
+  styling. Slipp CSS-filer och -klasser, och definiera istället CSS:en direkt i din JSX.
+- [Redux](https://react-redux.js.org/) skulle kunna utgöra en helt egen workshop, men är bra att känna till då det är
+  ett vanligt sätt att hantera state i större applikationer.
+- [TypeScript](https://www.typescriptlang.org/) har ingenting specifikt med React att göra, men har blivit allt
+  vanligare att man använder för att undvika problem som lätt uppstår pga avsaknaden av typer i JavaScript. Definiera
+  att din funktion tar in en sträng och få oändligt mycket mer hjälp från din IDE eller kompilator när du skickar in
+  något annat. Du
+  kan [skapa projekt med TypeScript i Create React App](https://create-react-app.dev/docs/adding-typescript/) eller
+  lägga till det i efterhand. Smidigast är att göra det så tidigt som möjligt.

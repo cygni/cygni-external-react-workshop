@@ -1,0 +1,13 @@
+.counters-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.counter-sum {
+  font-size: 5rem;
+  text-align: center;
+}
