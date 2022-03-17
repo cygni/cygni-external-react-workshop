@@ -66,3 +66,29 @@ Kolla in [Reacts dokumentation](https://reactjs.org/).
 
 Små "kata"-övningar för att lära sig React:
 [React Katas](https://www.codewars.com/collections/react-katas).
+
+Skapa ditt eget projekt och utforska vidare. För att snabbt komma igång kan du
+använda [Create React App](https://github.com/facebook/create-react-app) som skapar ett projekt åt dig att utgå ifrån:
+
+```shell
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+Det finns flertalet bibliotek som löser saker som navigation, styling och annat du kan tänkas vilja komplettera med. Här
+är några exempel:
+
+- [React Router](https://reactrouter.com/) är en populär lösning för att navigera inom appen. Vanliga `<a>`-taggar
+  laddar om sidan vilket förstör poängen med en Single Page Application. Med ett bibliotek som detta kan React behålla
+  sitt state och bara uppdatera delarna av sidan som påverkas av sidbytet.
+- [Styled Components](https://styled-components.com/) är ett populärt koncept för att skapa komponenter med inbakad
+  styling. Slipp CSS-filer och -klasser, och definiera istället CSS:en direkt i din JSX.
+- [Redux](https://react-redux.js.org/) skulle kunna utgöra en helt egen workshop, men är bra att känna till då det är
+  ett vanligt sätt att hantera state i större applikationer.
+- [TypeScript](https://www.typescriptlang.org/) har ingenting specifikt med React att göra, men har blivit allt
+  vanligare att man använder för att undvika problem som lätt uppstår pga avsaknaden av typer i JavaScript. Definiera
+  att din funktion tar in en sträng och få oändligt mycket mer hjälp från din IDE eller kompilator när du skickar in
+  något annat. Du
+  kan [skapa projekt med TypeScript i Create React App](https://create-react-app.dev/docs/adding-typescript/) eller
+  lägga till det i efterhand. Smidigast är att göra det så tidigt som möjligt.
