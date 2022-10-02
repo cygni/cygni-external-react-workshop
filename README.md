@@ -46,7 +46,7 @@ Skapa en att-göra-lista.
 
 ```jsx
 {
-  items.map(item => <li key={item}>{item}</li>)
+	items.map((item) => <li key={item}>{item}</li>);
 }
 ```
 
@@ -59,6 +59,24 @@ Skapa en att-göra-lista.
   Uppdatera titeln med `document.title = "Ny titel"`.
 - Skapa en egen hook som skriver ut saker att göra i webbläsarfliken. Namnet på din hook bör börja med "use" för att
   visa att det är en hook, t ex `useTodoTitle`.
+
+&nbsp;
+
+### Extra övning: Tester i react
+
+React har olika typer av testramverk och att lägga till tester i React är väldigt enkelt. Är appen skapad med CRA (Create react app) så finns det redan med från början, annars så behöver man installera det. I den här övningen så använder vi oss av [React testing library](https://testing-library.com/docs/react-testing-library/intro/).
+
+Övningarna görs i `Exercise4.test.jsx` filen som i sin tur testar `Exercise4.jsx` filen. Du kör testerna genom att köra kommandot `npm test` i terminalen.
+
+Laga följande tester som failar:
+
+- should render hello on page and call func when clicking button
+- should change total when input is changed
+
+Skriv ett test som..
+
+- Kollar så att titel "Testing page" finns på sidan.
+- Kollar att det renderas 3 objekt på sidan som har titel som börjar med "object".
 
 ## Lär dig mer
 
