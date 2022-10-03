@@ -62,13 +62,13 @@ Skapa en att-göra-lista.
 
 &nbsp;
 
-### Extra övning: Tester i react
+## Extra övning: Tester i react
 
-React har olika typer av testramverk och att lägga till tester i React är väldigt enkelt. Är appen skapad med CRA (Create react app) så finns det redan med från början, annars så behöver man installera det. I den här övningen så använder vi oss av [React testing library](https://testing-library.com/docs/react-testing-library/intro/).
+React har olika typer av testramverk och att lägga till tester i React är väldigt enkelt. Är appen skapad med CRA (Create react app) så finns det redan med från början, annars så behöver man installera det. I den här övningen så använder vi oss av ett extra bibliotek som heter [React testing library](https://testing-library.com/docs/react-testing-library/intro/).
 
 Övningarna görs i `Exercise4.test.jsx` filen som i sin tur testar `Exercise4.jsx` filen. Du kör testerna genom att köra kommandot `npm test` i terminalen.
 
-Laga följande tester som failar:
+Laga följande tester som är sönder:
 
 - should render hello on page and call func when clicking button
 - should change total when input is changed
@@ -77,6 +77,10 @@ Skriv ett test som..
 
 - Kollar så att titel "Testing page" finns på sidan.
 - Kollar att det renderas 3 objekt på sidan som har titel som börjar med "object".
+
+Du kan läsa mer om testning i react här: [Testa med react](https://reactjs.org/docs/testing.html)
+
+&nbsp;
 
 ## Lär dig mer
 

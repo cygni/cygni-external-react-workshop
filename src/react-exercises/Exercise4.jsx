@@ -20,7 +20,8 @@ export function Exercise4() {
 				<input
 					data-testid="test-input"
 					value={count}
-					onChange={() => setCount((value) => count + value)}
+					name="test-input"
+					onChange={(e) => setCount(e.target.value)}
 				></input>
 				<div type="number" data-testid="total">
 					{count}

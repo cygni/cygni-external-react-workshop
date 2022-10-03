@@ -29,7 +29,7 @@ it("should render hello on page and call func when clicking button", async () =>
 it("should change total when input is changed", async () => {
 	render(<Exercise4 />);
 
-	//Lägg till att testet sätter input värde
+	//Lägg till så att testet sätter input värde, du kan använda fireEvent.change https://testing-library.com/docs/dom-testing-library/api-events/#fireeventeventname
 	await act(async () => {
 		fireEvent.change(screen.getByTestId("test-input"), {
 			target: { value: "10" },
